@@ -23,6 +23,7 @@ This script WILL overwrite the files in your output build folder, so if you want
 	powershell Compress-Archive -Path '%src%*' -DestinationPath '%output%.zip' -Force
 	move "%output%.zip" "%output%.love"
 	copy /b "%love%love.exe"+"%output%.love" "%build%%name%.exe"
+	xcopy "%love%license.txt" "%build%" /r /q
 	xcopy "%love%love.dll" "%build%" /r /q
 	xcopy "%love%SDL2.dll" "%build%" /r /q
 	xcopy "%love%lua51.dll" "%build%" /r /q
