@@ -29,6 +29,8 @@ This script WILL overwrite the files in your output build folder, so if you want
 	xcopy "%love%lua51.dll" "%build%" /r /q
 	xcopy "%love%OpenAL32.dll" "%build%" /r /q
 	xcopy "%love%mpg123.dll" "%build%" /r /q
+	xcopy "%love%msvcp120.dll" "%build%" /r /q
+	xcopy "%love%msvcr120.dll" "%build%" /r /q
 	del "%output%.love"
 [lovebuild.bat](https://github.com/anaseskyrider/lovebuild.bat/blob/main/lovebuild.bat)
 
