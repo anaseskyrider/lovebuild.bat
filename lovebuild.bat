@@ -20,4 +20,6 @@ xcopy "%love%SDL2.dll" "%build%" /r /q
 xcopy "%love%lua51.dll" "%build%" /r /q
 xcopy "%love%OpenAL32.dll" "%build%" /r /q
 xcopy "%love%mpg123.dll" "%build%" /r /q
+xcopy "%love%msvcp120.dll" "%build%" /r /q
+xcopy "%love%msvcr120.dll" "%build%" /r /q
 del "%output%.love"
